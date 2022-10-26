@@ -1,2 +1,2 @@
-# Object_Measurer
-Measure any objects with clicks 
+# Automated XSEM Measurer
+- With the use of OpenCV library, images are converted into black and white images 
