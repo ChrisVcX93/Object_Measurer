@@ -102,12 +102,10 @@ def affirmative(contents,fnames):
     if contents is not None and fnames is not None:
         timestr = time.strftime("%Y%m%d-%H%M%S")
         id = str(uuid.uuid4())
-        UPLOAD_DIRECTORY = os.path.join(r"C:\Users\cvaahsan\Desktop\OpenCVStuff\AXM_Prod\assets",id)
-        os.mkdir(UPLOAD_DIRECTORY)
+        UPLOAD_DIRECTORY = os.path.join(r"C:\Users\XXX",id)
         print(f"Created a new folder {id}")
         for name, data in zip(fnames, contents):
             save_file(name, data,UPLOAD_DIRECTORY)
-        files = uploaded_files(UPLOAD_DIRECTORY)
         print(f"Any files here ?{files}")
         return "/start",UPLOAD_DIRECTORY,files,len(files),timestr
     else:
