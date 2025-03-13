@@ -524,7 +524,7 @@ def onemore(AOclicks,l,r,data):
     State('timestr','data'),
     prevent_initial_call=True)
 def func(n_clicks,timestr):
-    return send_file(r"C:\Users\cvaahsan\Desktop\OpenCVStuff\AXM_Prod\AXM"+timestr+".pptx")
+    return send_file(r"C:\Users\XXX\"+timestr+".pptx")
 
 
 #just remind user to download ppt at the last image 
