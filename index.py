@@ -88,9 +88,3 @@ def display_page(pathname,fldata,r):
     else:
         return page_1_layout
 
-if __name__ == '__main__':
-    app.run_server(debug=True)
-
-#from waitress import server
-#if __name__ == '__main__':
-    #app.run_server(debug=False,threaded=True,host="0.0.0.0",port=1234)
