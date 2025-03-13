@@ -14,11 +14,6 @@ app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
     html.Div(id='page-content'),
 
-    #store the timestr created in browser session so download same PPT later
-html.Div([dcc.Store(id="timestr", data = 0,storage_type="session")]),
-
-    #store the AXM images in a master list created in browser session
-html.Div([dcc.Store(id="axmimages", data = [],storage_type="session")]),
 
 #store all the AXM images measurements in a master list created in browser session
 html.Div([dcc.Store(id="ll", data = [],storage_type="session")]),
